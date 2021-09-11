@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
+    "webpack": "webpack || exit 1",
+    "html": "cp -r index.html dist/",
+    "css": "cp -r css dist/",
+    "build": "npm run webpack && npm run html && npm run css",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
@@ -24,7 +26,7 @@
     "webpack-cli": "^4.8.0"
   },
   "dependencies": {
-    "gh-pages": "^3.2.3",
-    "lodash": "^4.17.21"
+    "animejs": "^3.2.1",
+    "gh-pages": "^3.2.3"
   }
 }
