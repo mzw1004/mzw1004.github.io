@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "webpack": "webpack || exit 1",
-    "html": "cp -r index.html dist/",
-    "css": "cp -r css/ dist/",
+    "html": "cp -r ./index.html dist/",
+    "css": "cp -r ./css/ dist/",
     "build": "npm run webpack && npm run html && npm run css",
     "deploy": "gh-pages -d dist"
   },
