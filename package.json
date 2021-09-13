@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "webpack": "webpack || exit 1",
-    "html": "cp -r index.html dist/",
-    "css": "cp -r css dist/",
-    "build": "npm run webpack && npm run html && npm run css",
+    "html": "cp -r src/index.html dist/",
+    "css": "cp -r src/css dist/",
+    "favicon": "cp -r src/favicon dist/",
+    "build": "npm run webpack && npm run html && npm run css && npm run favicon",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
